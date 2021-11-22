@@ -1,4 +1,4 @@
-package Lesson7.Poker;
+package Lesson7;
 
 import java.util.Arrays;
 
@@ -34,7 +34,6 @@ public class Player {
             j++;
             i++;
             }
-
     }return playerHand;
 
 }

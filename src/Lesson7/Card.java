@@ -1,4 +1,4 @@
-package Lesson7.Poker;
+package Lesson7;
 
 public class Card {
     private String suit;
@@ -16,4 +16,5 @@ public class Card {
                 ", rank='" + rank + '\'' +
                 '}';
     }
+
 }

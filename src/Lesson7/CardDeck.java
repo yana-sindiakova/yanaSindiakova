@@ -1,4 +1,4 @@
-package Lesson7.Poker;
+package Lesson7;
 
 public class CardDeck{
 
@@ -20,5 +20,6 @@ public class CardDeck{
         }
         return deck;
     }
+
 }
 
