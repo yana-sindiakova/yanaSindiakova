@@ -12,7 +12,6 @@ public class CardDeck{
 
     public Card[] shuffleDeck (String [] suit, String [] rank, Card [] deck){
         for (int i = 0; i < 100; i++) {
-            //int r = i + (int) (Math.random() * (52-i)); // случайная карта в колоде
             int in = (int)((Math.random()*52));
             int out = (int)((Math.random()*52));
             Card temp = deck[in];
