@@ -2,9 +2,9 @@ package Lesson7;
 
 public class Main {
     public static void main(String[] args) {
-        String [] suit = {"Diamonds","Clubs", "Hearts", "Spades" };
-        String [] rank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
-        Card [] deck = new Card[suit.length * rank.length];
+        String[] suit = {"Diamonds", "Clubs", "Hearts", "Spades"};
+        String[] rank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+        Card[] deck = new Card[suit.length * rank.length];
 
         CardDeck cardDeck = new CardDeck();
         cardDeck.generateCard(suit, rank, deck);
