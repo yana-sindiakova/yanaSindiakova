@@ -1,10 +1,10 @@
 package Lesson9;
 
 public enum LoggerType {
-    ERROR("Error was detected!"),
-    WARNING("Warning was detected!"),
-    INFO("Information message..."),
-    DE_BUG("De bug mode on");
+    ERROR("Log[ERROR]"),
+    WARNING("Log[WARNING]"),
+    INFO("Log[INFO]"),
+    DEBUG("Log[DEBUG]");
 
     private String type;
 
