@@ -1,4 +1,4 @@
-package Lesson9;
+package oldTasks.Lesson9;
 
 public enum LoggerType {
     ERROR("Log[ERROR]"),

@@ -1,4 +1,4 @@
-package Lesson7;
+package oldTasks.Lesson7;
 
 public class Card {
     private String suit;

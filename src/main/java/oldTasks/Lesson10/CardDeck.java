@@ -1,4 +1,4 @@
-package Lesson10;
+package oldTasks.Lesson10;
 
 public class CardDeck {
 

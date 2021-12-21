@@ -1,4 +1,4 @@
-package Lesson9;
+package oldTasks.Lesson9;
 
 public class Logger {
     private static final String ANSI_RESET = "\u001B[0m";

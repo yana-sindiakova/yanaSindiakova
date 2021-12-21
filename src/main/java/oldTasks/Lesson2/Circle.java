@@ -1,4 +1,4 @@
-package Lesson2;
+package oldTasks.Lesson2;
 
 public class Circle {
     public static void main(String[] args) {

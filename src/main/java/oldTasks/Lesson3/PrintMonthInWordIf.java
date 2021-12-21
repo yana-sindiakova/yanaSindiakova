@@ -1,4 +1,4 @@
-package Lesson3;
+package oldTasks.Lesson3;
 
 public class PrintMonthInWordIf {
     public static void main(String[] args) {

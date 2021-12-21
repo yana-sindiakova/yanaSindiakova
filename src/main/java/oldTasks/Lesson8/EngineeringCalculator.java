@@ -1,4 +1,4 @@
-package Lesson8;
+package oldTasks.Lesson8;
 
 public class EngineeringCalculator extends SimpleCalculator {
 
