@@ -32,11 +32,12 @@ public class ThirdTaskHover {
         List<WebElement> userList = driver.findElements(By.className("figure"));
         Actions action = new Actions(driver);
         int elemIndex = 1;
-        for (int i = 0; i < userList.size(); i++) {
-            action.moveToElement(userList.get(i)).perform();
+        for (WebElement userIcon : userList) {
+            action.moveToElement(userIcon).perform();
             String userName = driver.findElement(By.xpath("(//*[@id='content']//h5)[" + elemIndex + "]")).getText();
             System.out.println(userName);
             elemIndex++;
         }
     }
 }
+
