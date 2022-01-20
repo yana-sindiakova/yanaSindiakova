@@ -42,12 +42,12 @@ public class ChallengingDomPage extends BasePage {
         return this;
     }
 
-    public void showColumnByNumber(int columnNumber) {
+    public List<String> showColumnByNumber(int columnNumber) {
         List<String> column = new ArrayList<>();
         for (int i = columnNumber - 1; i < columnElements.size(); i = i + 7) {
             column.add(columnElements.get(i).getText());
         }
-        System.out.println("Elements from the column #" + columnNumber + " = " + column);
+        return column;
     }
 
 
