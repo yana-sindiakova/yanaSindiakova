@@ -20,6 +20,12 @@ public class MainPage extends BasePage {
     @FindBy(linkText = "Hovers")
     private WebElement hoversPageLink;
 
+    @FindBy(linkText = "File Upload")
+    private WebElement uploadPageLink;
+
+    @FindBy(linkText = "File Download")
+    private WebElement downloadPageLink;
+
 
     public MainPage(WebDriver driver) {
         super(driver);
@@ -48,6 +54,18 @@ public class MainPage extends BasePage {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(hoversPageLink));
         hoversPageLink.click();
         return new HoversPage(driver);
+    }
+
+    public UploadPage goToUploadPage() {
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(uploadPageLink));
+        uploadPageLink.click();
+        return new UploadPage(driver);
+    }
+
+    public DownloadPage goToDownloadPage() {
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(downloadPageLink));
+        downloadPageLink.click();
+        return new DownloadPage(driver);
     }
 
 
