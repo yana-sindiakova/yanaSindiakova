@@ -15,6 +15,7 @@ public class Geolocation extends BaseTest {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(latitudeText, "50.4798007");
         softAssert.assertEquals(longitudeText, "30.6020642");
+        softAssert.assertAll();
 
     }
 }
