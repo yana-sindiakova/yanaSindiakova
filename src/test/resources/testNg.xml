@@ -3,8 +3,5 @@
 <suite name="Suite1" verbose="1">
     <test name="FirstHomeWork">
         <parameter name="env" value="devUrl"></parameter>
-        <classes>
-            <class name="HomeWorkTestNG.Lesson17TestNg"/>
-        </classes>
     </test>
 </suite>
