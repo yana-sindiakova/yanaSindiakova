@@ -1,6 +1,6 @@
 package HomeWork15PO;
 
-import newTasksAutomation.PageObjects.GeolocationPage;
+import newTasksAutomation.pageObjects.GeolocationPage;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

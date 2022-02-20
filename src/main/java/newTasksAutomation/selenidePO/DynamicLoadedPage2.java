@@ -3,6 +3,9 @@ package newTasksAutomation.selenidePO;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 import static com.codeborne.selenide.Selenide.$x;
 
 public class DynamicLoadedPage2 {
@@ -17,4 +20,5 @@ public class DynamicLoadedPage2 {
     public String getAbsentElementText() {
         return absentElement.should(Condition.visible).getText();
     }
+
 }

@@ -1,8 +1,8 @@
 package HomeWork16Lesson26;
 
 import HomeWork15PO.BaseTest;
-import newTasksAutomation.PageObjects.DownloadPage;
-import newTasksAutomation.PageObjects.UploadPage;
+import newTasksAutomation.pageObjects.DownloadPage;
+import newTasksAutomation.pageObjects.UploadPage;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
