@@ -1,7 +1,7 @@
 package HomeWork15PO;
 
-import newTasksAutomation.PageObjects.LoginPage;
-import newTasksAutomation.PageObjects.SecurePage;
+import newTasksAutomation.pageObjects.LoginPage;
+import newTasksAutomation.pageObjects.SecurePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,7 +20,7 @@ public class Authentication extends BaseTest {
 
     }
 
-    @Test(priority = 20)
+    @Test(priority = 20) // Failed test for Allure report
     public void invalidLoginTest() {
         openApp().goToLoginPage()
                 .setUsername("wrongName")
@@ -29,7 +29,7 @@ public class Authentication extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         String errorAlertText = loginPage.getAlertText();
-        Assert.assertTrue(errorAlertText.contains("Your username is invalid!"));
+        Assert.assertTrue(errorAlertText.contains("Your username is tralala!")); // changed expected message to simulate test failing
     }
 
     @Test(priority = 30)

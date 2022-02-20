@@ -1,5 +1,6 @@
-package newTasksAutomation.PageObjects;
+package newTasksAutomation.pageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,11 +21,13 @@ public class SecurePage extends BasePage {
     @FindBy(css = ".icon-2x.icon-signout")
     private WebElement logoutButton;
 
+    @Step("Verify alert text")
     public String getSuccessAlertText() {
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.id("flash")));
         return successAlert.getText();
     }
 
+    @Step("Click [Logout] button")
     public LoginPage logout() {
         clickButton(logoutButton);
         return new LoginPage(driver);
