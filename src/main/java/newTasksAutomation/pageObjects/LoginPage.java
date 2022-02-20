@@ -1,5 +1,6 @@
-package newTasksAutomation.PageObjects;
+package newTasksAutomation.pageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,18 +27,21 @@ public class LoginPage extends BasePage {
     @FindBy(id = "flash")
     private WebElement alert;
 
+    @Step("Enter userName")
     public LoginPage setUsername(String username) {
         webDriverWait.until(ExpectedConditions.visibilityOf(usernameInput));
         usernameInput.sendKeys(username);
         return this;
     }
 
+    @Step("Enter password")
     public LoginPage setPassword(String password) {
         webDriverWait.until(ExpectedConditions.visibilityOf(passwordInput));
         passwordInput.sendKeys(password);
         return this;
     }
 
+    @Step("Click [Login] button")
     public void clickLoginButton() {
         clickButton(loginButton);
     }
@@ -49,6 +53,7 @@ public class LoginPage extends BasePage {
         return new SecurePage(driver);
     }
 
+    @Step("Verify alert text")
     public String getAlertText() {
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.id("flash")));
         return alert.getText();

@@ -1,6 +1,7 @@
-package newTasksAutomation.PageObjects;
+package newTasksAutomation.pageObjects;
 
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,6 +39,7 @@ public class MainPage extends BasePage {
         return new ChallengingDomPage(driver);
     }
 
+    @Step("Go to Login Page")
     public LoginPage goToLoginPage() {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(loginPageLink));
         loginPageLink.click();
