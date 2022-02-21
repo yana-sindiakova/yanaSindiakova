@@ -1,4 +1,4 @@
-package newTasksAutomation.PageObjects;
+package newTasksAutomation.pageObjects;
 
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.WebDriver;

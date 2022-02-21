@@ -51,6 +51,8 @@ public class ThirdTaskLocation {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(latitudeValue.getText(), "50.4798007");
         softAssert.assertEquals(longitudeValue.getText(), "30.6020642");
+
+
     }
 
 }
